@@ -13,6 +13,8 @@
 		82D65CA62B3E876A00E4708B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D65CA52B3E876A00E4708B /* Preview Assets.xcassets */; };
 		82D65CA82B3E876A00E4708B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D65CA72B3E876A00E4708B /* Persistence.swift */; };
 		82D65CAB2B3E876A00E4708B /* iOSCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82D65CA92B3E876A00E4708B /* iOSCoreData.xcdatamodeld */; };
+		82D65CB52B3E88DB00E4708B /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D65CB42B3E88DB00E4708B /* TaskCell.swift */; };
+		82D65CB72B3E8AA500E4708B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D65CB62B3E8AA500E4708B /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		82D65CA52B3E876A00E4708B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		82D65CA72B3E876A00E4708B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		82D65CAA2B3E876A00E4708B /* iOSCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOSCoreData.xcdatamodel; sourceTree = "<group>"; };
+		82D65CB42B3E88DB00E4708B /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		82D65CB62B3E8AA500E4708B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,10 @@
 		82D65C9D2B3E876800E4708B /* iOSCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				82D65C9E2B3E876800E4708B /* iOSCoreDataApp.swift */,
-				82D65CA02B3E876800E4708B /* ContentView.swift */,
-				82D65CA22B3E876A00E4708B /* Assets.xcassets */,
-				82D65CA72B3E876A00E4708B /* Persistence.swift */,
+				82D65CB22B3E87B200E4708B /* Views */,
+				82D65CB32B3E87C300E4708B /* Cells */,
 				82D65CA92B3E876A00E4708B /* iOSCoreData.xcdatamodeld */,
+				82D65CB12B3E879B00E4708B /* Apputils */,
 				82D65CA42B3E876A00E4708B /* Preview Content */,
 			);
 			path = iOSCoreData;
@@ -71,6 +74,33 @@
 				82D65CA52B3E876A00E4708B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		82D65CB12B3E879B00E4708B /* Apputils */ = {
+			isa = PBXGroup;
+			children = (
+				82D65C9E2B3E876800E4708B /* iOSCoreDataApp.swift */,
+				82D65CA72B3E876A00E4708B /* Persistence.swift */,
+				82D65CA22B3E876A00E4708B /* Assets.xcassets */,
+			);
+			path = Apputils;
+			sourceTree = "<group>";
+		};
+		82D65CB22B3E87B200E4708B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				82D65CA02B3E876800E4708B /* ContentView.swift */,
+				82D65CB62B3E8AA500E4708B /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		82D65CB32B3E87C300E4708B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				82D65CB42B3E88DB00E4708B /* TaskCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,9 +174,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				82D65CA82B3E876A00E4708B /* Persistence.swift in Sources */,
+				82D65CB72B3E8AA500E4708B /* DetailView.swift in Sources */,
 				82D65CA12B3E876800E4708B /* ContentView.swift in Sources */,
 				82D65CAB2B3E876A00E4708B /* iOSCoreData.xcdatamodeld in Sources */,
 				82D65C9F2B3E876800E4708B /* iOSCoreDataApp.swift in Sources */,
+				82D65CB52B3E88DB00E4708B /* TaskCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
